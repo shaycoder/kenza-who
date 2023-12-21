@@ -1,0 +1,86 @@
+footer {
+    /*background: url('./assets/images/2.jpg') no-repeat center;
+    background-size: cover;*/
+    background-color: $black;
+    background-image: url('./assets/images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #D2AC47;
+    padding-top: 1rem;
+    @mixin atMedium {
+        padding-top: 4rem;
+    }
+}
+
+.footer {
+    display: block;
+    text-align: center;
+
+    @mixin atMedium {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top {
+        max-width: 900px;
+        margin-inline: auto;
+        padding-bottom: 1rem;
+        @mixin atMedium {
+            padding-bottom: 3rem;
+        }
+
+        p {
+            padding: 1.2rem;
+        }
+    }
+
+    &__logo {
+        width: 85px;
+        margin: 0 auto 1.5rem auto; 
+        @mixin atMedium {
+            width: 110px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-evenly;   
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 1.5rem;
+        gap: 2.5rem;
+        @mixin atMedium {
+            align-items: flex-start;
+            flex-direction: row;
+        }
+        @mixin forSmall {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.footer > div {
+    margin-top: 2.5rem;
+    @mixin atMedium {
+        margin-top: 0;
+    }
+}
+
+.footer > div > span {
+    margin: 1rem 0;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 20px 5px 5px 5px;
+}
+
+.fa-clr {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.inner-footer {
+    background: linear-gradient(45deg, $maroon, $black, $black, $maroon);
+}

@@ -1,0 +1,50 @@
+.features {
+    background-color: $black;
+
+    &__title {
+        color: $white;
+        margin-top: 1.5rem;
+        @mixin atMedium {
+            margin-top: 3rem;
+        }
+        text-align: center;
+    }
+
+    &__section {
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        &__desc {
+            color: $white;
+            padding: 3rem 0 3rem 0;
+            
+        }
+        &__imgs {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            @mixin atMedium {
+                padding: 1.5rem 0;
+            }
+
+            div {
+                flex: auto;
+                @mixin atMedium {
+                    flex: 1;
+                    margin-right: 2rem;
+                }
+                @mixin forSmall {
+                    margin-bottom: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+.inner-features {
+    background: url('./assets/images/2.jpg') no-repeat center;
+    background-size: cover;
+}

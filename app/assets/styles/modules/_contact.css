@@ -1,0 +1,77 @@
+.contact-section {
+    background-image: url('./assets/images/2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $white;
+
+    h2 {
+        margin: 3rem 0 2rem 0;
+    }
+
+    p {
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        @mixin atMedium {
+            width: 40vw;
+        }
+        margin-bottom: 1rem;
+
+        label {
+            padding: .75rem 0;
+            font-size: 1rem;
+            font-weight: 500;
+            
+            @mixin atMedium {
+                font-size: 1.19rem;
+            }
+        }
+
+        &__input {
+            border: none;
+            outline: none;
+            padding: .70rem 1rem;
+            font-size: .95rem;
+
+            @mixin atMedium {
+                font-size: 1.1rem;
+                padding: .75rem 1.2rem;
+            }
+            border-radius: 5px;
+            
+        }
+
+        &__btn {
+            margin-top: 3rem;
+            background: $lightgrey; 
+            color: $maroon;
+            padding: 0.3rem 1.2rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-size: 1.25rem;
+            border: none;
+            transition: transform .5s ease-out;
+            cursor: pointer;
+            align-self: center;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+

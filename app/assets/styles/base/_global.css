@@ -1,0 +1,72 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden; 
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito Sans', serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.35rem;
+}
+
+h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.gradColor {
+    @mixin textGradient;
+}
+
+h2 {
+    @mixin atMedium {
+        font-size: 3rem;
+    }    
+}
+
+.go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    @mixin atMedium {
+        right: 30px;
+    }
+    z-index: 99;
+    font-size: 1.5rem;
+
+    a {
+       color: $gold;
+    }
+}
+
+p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    @mixin atMedium {
+        font-size: 1.3rem;
+    }
+}

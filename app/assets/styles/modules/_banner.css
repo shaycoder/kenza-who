@@ -1,0 +1,69 @@
+.banner {
+    display: flex;
+    background: $black;
+    height: 100vh;
+    background-image: url('./assets/images/bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: contain;
+    @mixin atMedium {
+        background-position: top;
+        background-size: cover;
+    }
+
+    &__desc {
+        color: $gold;
+        max-width: 600px;
+        max-height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-inline: 1.1rem;
+        margin-top: 6rem;
+        /*background-color: $black;*/
+        @mixin atMedium {            
+            margin-left: 6.125rem;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+            line-height: 1.1;
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: $white;
+        }
+
+        button {
+            border-radius: 50px;
+            padding: 1rem 1.5rem;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            background-color: $gold;
+            color: $black;
+            cursor: pointer;
+        }
+    }
+}
+
+.imgs_section {
+    background-color: $black;
+    color: $white;
+
+    span {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 3rem;
+    }
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
