@@ -38,14 +38,11 @@ ul {
     list-style-type: none;
 }
 
-.gradColor {
-    @mixin textGradient;
-}
-
 h2 {
+    font-size: 1.5rem;
     @mixin atMedium {
         font-size: 3rem;
-    }    
+    }
 }
 
 .go-to-top {
@@ -64,9 +61,31 @@ h2 {
 }
 
 p {
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.6;
     @mixin atMedium {
         font-size: 1.3rem;
+    }
+}
+
+.span-bl-mb {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: $gold;
+}
+
+.who-btn {
+    border-radius: 50px;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    background-color: $gold;
+    color: $black !important;
+    cursor: pointer;
+    border: none;    
+    transition: transform .5s ease-out;
+    &:hover {
+        text-decoration: none;
+        transform: scale(.9);
     }
 }

@@ -9,16 +9,28 @@
         flex-wrap: wrap;
 
         .item {
-            padding: 2rem;
+            padding: 1.5rem;
             margin-top: 2rem;
-            background: $lightgold;
+            background: #faf0be;   
+            @mixin atMedium {
+                background: khaki;
+                padding: 2rem;
+            }
             color: $black;
             border-radius: 10px;
-            /*border: 1px solid $gold;*/
             flex: auto;
             @mixin atMedium {
                 margin-right: 2rem;
                 flex: 1;
+            }
+
+            span, h3 {
+                @mixin forSmall {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 1.2rem;
+                    font-size: 1.4rem;
+                }
             }
 
             p {
@@ -34,7 +46,10 @@
         }
 
         i {
-            margin-bottom: 1.5rem;
+            @mixin atMedium {
+                margin-bottom: 1.5rem;
+            }           
+            color: goldenrod;
         }
 
         .fa-ul {

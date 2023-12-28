@@ -2,14 +2,15 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: $lightgold;
-
-    span {
-        margin-bottom: 1rem;
+    background: #faf0be;   
+    @mixin atMedium {
+        background: khaki;
     }
+    background-color: $black;
+    color: $white;
 
     h2 {
-        max-width: 600px;
+        /*max-width: 800px;*/
         margin: 0 auto 3rem auto;
     }
 
@@ -20,7 +21,7 @@
             grid-template-columns: 1fr 1fr 1fr;
         }
         gap: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
 
     &__item {
@@ -32,10 +33,18 @@
         span {
             margin-top: 2rem;
             margin-bottom: .2rem;
+            @mixin forSmall {
+                text-align: right;
+            }
         }
         
         h3 {
             margin-top: 0;
+            @mixin forSmall {
+                font-size: 1.3rem;
+                text-align: center;
+                @mixin textGradient;
+            }
         }
 
         &:hover {

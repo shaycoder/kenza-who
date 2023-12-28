@@ -80,7 +80,3 @@ footer {
     font-size: 1.7rem;
     margin-bottom: 1rem;
 }
-
-.inner-footer {
-    background: linear-gradient(45deg, $maroon, $black, $black, $maroon);
-}

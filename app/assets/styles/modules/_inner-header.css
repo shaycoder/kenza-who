@@ -1,4 +1,4 @@
-.site-header {
+.inner-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,11 +6,7 @@
     @mixin atMedium {
         padding: 1.5rem 6.25rem;
     }
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
+    background: $black;
 
     &__logo {
         width: 85px;
@@ -121,7 +117,7 @@
             transform: rotate(45deg) scaleX(1.25);
         }
 
-        .site-header__menu-icon__middle {
+        .inner-header__menu-icon__middle {
             opacity: 0;
             transform: scaleX(0);
         }

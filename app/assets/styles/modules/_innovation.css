@@ -24,12 +24,13 @@
         justify-content: center;
         align-items: flex-start;
         flex: 1;
+        padding: .5rem;
         @mixin atMedium {
             align-items: center;
             height: 70vh;
             width: 70vh;
+            padding: 2rem;
         }
-        padding: 2rem;
 
         h3 {
             font-size: 2.2rem;
@@ -51,7 +52,12 @@
         display: flex;
         margin-block: 3rem;
         flex:1;
-        padding: 2rem;
+        padding: 1.5rem;
+
+        p {
+            font-size: 1.1rem;
+            color: $white;
+        }
 
         /*h3 {
             margin: .5rem 0 1rem 0;

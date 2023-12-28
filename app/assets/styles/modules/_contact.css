@@ -1,8 +1,9 @@
 .contact-section {
-    background-image: url('./assets/images/2.jpg');
+    background-image: url('./assets/images/11.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    /*background-color: khaki;*/
 }
 
 .contact {
@@ -13,7 +14,9 @@
     color: $white;
 
     h2 {
-        margin: 3rem 0 2rem 0;
+        margin: 1rem 0 2rem 0;
+        /*color: $gold;*/
+        @mixin textGradient;
     }
 
     p {
@@ -56,19 +59,14 @@
 
         &__btn {
             margin-top: 3rem;
-            background: $lightgrey; 
-            color: $maroon;
+            align-self: center;
+            padding-block: .7rem;
+            /*background: $lightgrey;
             padding: 0.3rem 1.2rem;
             border-radius: 2rem;
             text-decoration: none;
             font-size: 1.25rem;
-            border: none;
-            transition: transform .5s ease-out;
-            cursor: pointer;
-            align-self: center;
-            &:hover {
-                transform: scale(1.1);
-            }
+            border: none;*/
         }
     }
 }

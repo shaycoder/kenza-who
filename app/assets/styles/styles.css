@@ -4,13 +4,12 @@
 @import "base/_global";
 @import "modules/_wrapper";
 @import "modules/_header";
+@import "modules/_inner-header";
 @import "modules/_banner";
 @import "modules/_portfolio";
 @import "modules/_services";
-@import "modules/_pictures";
 @import "modules/_about";
 @import "modules/_innovation";
-@import "modules/_features";
 @import "modules/_contact";
 @import "modules/_scroller";
 @import "modules/_footer";
