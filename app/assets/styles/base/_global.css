@@ -15,7 +15,7 @@ body {
 
 img {
     max-width: 100%;
-    height: auto;
+    height: auto; 
 }
 
 * {
@@ -32,6 +32,10 @@ h1, h2 {
     padding: 0;
 }
 
+h1, h2, h3 {
+    font-family: 'Times New Roman', serif;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -43,6 +47,7 @@ h2 {
     @mixin atMedium {
         font-size: 3rem;
     }
+    @mixin textGradient;
 }
 
 .go-to-top {
@@ -71,7 +76,7 @@ p {
 .span-bl-mb {
     display: inline-block;
     margin-bottom: 0.5rem;
-    color: $gold;
+    color: $white;
 }
 
 .who-btn {

@@ -1,9 +1,6 @@
 .contact-section {
-    background-image: url('./assets/images/11.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url('./assets/images/inner-bg.jpg') no-repeat center;
     background-size: cover;
-    /*background-color: khaki;*/
 }
 
 .contact {
@@ -15,7 +12,6 @@
 
     h2 {
         margin: 1rem 0 2rem 0;
-        /*color: $gold;*/
         @mixin textGradient;
     }
 
@@ -61,12 +57,6 @@
             margin-top: 3rem;
             align-self: center;
             padding-block: .7rem;
-            /*background: $lightgrey;
-            padding: 0.3rem 1.2rem;
-            border-radius: 2rem;
-            text-decoration: none;
-            font-size: 1.25rem;
-            border: none;*/
         }
     }
 }

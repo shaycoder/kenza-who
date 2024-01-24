@@ -1,21 +1,23 @@
 .banner {
-    display: flex;
-    background: $black;
-    
+    display: grid;
     @mixin atMedium {
-        height: 100vh;
-        background-image: url('./assets/images/bg1.jpg');
-        background-repeat: no-repeat;
-        /*background-position: bottom left;
-        background-size: contain;*/
-        background-position: top;
-        background-size: cover;
+        grid-template-columns: 1fr 1fr;
+    }
+    place-items: center;
+    background: url('./assets/images/banner-bg.png') no-repeat center;
+    background-size: cover;
+    background-color: $black;
+
+    @mixin atMedium {
+        height: 100vh; 
     }
 
     &__desc {
+        flex: auto;
+        @mixin atMedium {
+            flex: 1;
+        }
         color: $gold;
-        max-width: 600px;
-        max-height: 600px;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -23,8 +25,7 @@
         padding-inline: 1.1rem;
         padding-top: 5rem;
         padding-bottom: 3rem;
-        margin-top: 5rem;
-        /*background-color: $black;*/
+        margin-top: 8rem;
         @mixin atMedium {            
             margin-left: 6.125rem;
             margin-top: 6rem;
@@ -34,7 +35,7 @@
             margin-bottom: 1.2rem;
             font-size: 2rem;
             @mixin atMedium {
-                margin-bottom: 1rem;
+                margin-bottom: 1.3rem;
                 font-size: 3rem;
                 line-height: 1.1;
             }
@@ -45,24 +46,36 @@
             color: $lightgrey;
         }
     }
-}
 
-.imgs_section {
-    background-color: $black;
-    color: $white;
+    &__keys {
+        flex: auto;
+        @mixin atMedium {
+            flex: 1;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $gold;
 
-    h2 {
-        margin-bottom: 3rem;
+        .fa-ul {
+            margin-top: 2rem;
+
+            span {
+                @mixin textGradient;
+            }
+
+            li {
+                font-size: 1.5rem;
+                font-weight: bolder;
+                margin: 1rem;
+                @mixin textGradient;
+            }
+        }
+
+        @mixin forSmall {
+            display: none;
+        }
     }
-}
-
-.imgs {
-    display: grid;
-    grid-template-columns: 1fr;
-    @mixin atMedium {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    gap: 2rem;
 }
 
 .mob-image {

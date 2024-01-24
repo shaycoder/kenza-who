@@ -1,12 +1,7 @@
 footer {
-    /*background: url('./assets/images/2.jpg') no-repeat center;
-    background-size: cover;*/
-    background-color: $black;
-    background-image: url('./assets/images/footer-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url('./assets/images/footer-bg.jpg') no-repeat center;
     background-size: cover;
-    color: #D2AC47;
+    background-color: $black;
     padding-top: 1rem;
     @mixin atMedium {
         padding-top: 4rem;
@@ -32,15 +27,13 @@ footer {
 
         p {
             padding: 1.2rem;
+            color: $white;
         }
     }
 
     &__logo {
-        width: 85px;
-        margin: 0 auto 1.5rem auto; 
-        @mixin atMedium {
-            width: 110px;
-        }
+        width: 150px;
+        margin: 0 auto 1.5rem auto;
     }
 
     &__info {
@@ -56,6 +49,10 @@ footer {
         }
         @mixin forSmall {
             margin-top: 2rem;
+        }
+
+        p {
+            color: $white;
         }
     }
 }
@@ -74,9 +71,15 @@ footer {
 .footer-text {
     text-align: center;
     padding: 20px 5px 5px 5px;
+    color: $white;
 }
 
 .fa-clr {
     font-size: 1.7rem;
     margin-bottom: 1rem;
+    @mixin textGradient;
+}
+
+.text-bold {
+    @mixin textGradient;
 }

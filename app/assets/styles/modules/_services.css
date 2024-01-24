@@ -1,5 +1,5 @@
 .services {
-    background-color: $black;
+    background-color: #252525;
     color: $white;
 
     &__item {
@@ -11,17 +11,20 @@
         .item {
             padding: 1.5rem;
             margin-top: 2rem;
-            background: #faf0be;   
             @mixin atMedium {
-                background: khaki;
                 padding: 2rem;
             }
-            color: $black;
+            background-color: $black;
+            color: $white;
             border-radius: 10px;
             flex: auto;
             @mixin atMedium {
                 margin-right: 2rem;
                 flex: 1;
+            }
+
+            h3 {
+                @mixin textGradient;
             }
 
             span, h3 {
@@ -48,8 +51,8 @@
         i {
             @mixin atMedium {
                 margin-bottom: 1.5rem;
-            }           
-            color: goldenrod;
+            }
+            @mixin textGradient;
         }
 
         .fa-ul {

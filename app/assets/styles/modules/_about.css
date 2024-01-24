@@ -1,7 +1,5 @@
 .about {
-    background-image: url('./assets/images/11.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url('./assets/images/inner-bg.jpg') no-repeat center;
     background-size: cover;
     color: $white;
 
@@ -16,12 +14,11 @@
 
     &__imgs {
         display: grid;
-        grid-template-columns: 1fr;
         gap: 2rem;
         padding: .5rem;
         @mixin atMedium {
             grid-template-columns: 1fr 1fr;
-            padding: 1rem;
+            padding: 1.5rem;
         }        
     }
 }

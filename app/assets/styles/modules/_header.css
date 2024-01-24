@@ -13,10 +13,7 @@
     z-index: 1;
 
     &__logo {
-        width: 85px;
-        @mixin atMedium {
-            width: 110px;
-        }
+        width: 150px;
     }
 
     &__nav {

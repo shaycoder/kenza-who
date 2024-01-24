@@ -1,55 +1,64 @@
 .portfolio {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    background: #faf0be;   
-    @mixin atMedium {
-        background: khaki;
-    }
+    background: url('./assets/images/portfolio-bg.jpg') no-repeat center;
+    background-size: cover;
     background-color: $black;
     color: $white;
 
     h2 {
-        /*max-width: 800px;*/
         margin: 0 auto 3rem auto;
     }
 
-    &__items {
-        display: grid;
-        grid-template-columns: 1fr;
-        @mixin atMedium {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        gap: 2rem;
-        margin-bottom: 0;
+    h3 {
+        margin-top: .5rem;
+        @mixin textGradient;
     }
 
     &__item {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        transition: transform ease-out .5s;
+        display: grid;
+        @mixin atMedium {
+            grid-template-columns: 1fr 1fr;
+        }        
+        gap: 2rem;
+        place-items: center;
+        margin-block: 3rem;
 
-        span {
-            margin-top: 2rem;
-            margin-bottom: .2rem;
+        &__img {
             @mixin forSmall {
-                text-align: right;
-            }
-        }
-        
-        h3 {
-            margin-top: 0;
-            @mixin forSmall {
-                font-size: 1.3rem;
-                text-align: center;
-                @mixin textGradient;
+                order: 1;
+            }            
+            img {
+                @mixin atMedium {
+                    max-width: 600px;
+                }                
             }
         }
 
-        &:hover {
-            cursor: pointer;
-            transform: translateY(-20px);
+        &__desc {
+            @mixin forSmall {
+                order: 2;
+            }
+            span {
+                align-self: start;
+            }
+
+            a {
+                color: $white;
+                text-decoration: none;
+
+                span {
+                    margin-left: .5rem;
+                    margin-top: .2rem;
+                }
+
+                &:hover {
+                    color: $lightgold;
+                }
+            }
+
+            p {
+                font-size: 1.25rem;
+            }
         }
     }
 }
